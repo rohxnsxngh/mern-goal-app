@@ -16,5 +16,6 @@ app.use(errorHandler)
 // app.use(bodyParser.urlencoded({extended: true}))
 
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
