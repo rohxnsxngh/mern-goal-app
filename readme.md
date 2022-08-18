@@ -1,4 +1,4 @@
-# Goalsetter MERN app
+# Goals/Todo Application (MERN)
 
 This is a MERN application built to track goals and todo's with their respective due dates. Uses concurrently package to run backend and frontend simultaneously in development.
 
