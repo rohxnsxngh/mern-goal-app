@@ -9,6 +9,13 @@
 body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
+  background: rgb(226, 125, 96);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 125, 96, 1) 20%,
+    rgba(195, 141, 158, 1) 52%,
+    rgba(65, 179, 163, 1) 84%
+  );
 }
 
 a {
@@ -83,7 +90,7 @@ h3 {
 }
 
 .heading p {
-  color: #828282;
+  color: #ffffff;
 }
 
 .goals {
