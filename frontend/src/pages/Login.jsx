@@ -11,9 +11,7 @@ function Login() {
     email: "",
     password: "",
   });
-
   const { email, password } = formData;
-
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -25,6 +23,7 @@ function Login() {
     if (isError) {
       toast.error(message);
     }
+
     if (isSuccess || user) {
       navigate("/");
     }
@@ -44,24 +43,23 @@ function Login() {
 
     const userData = {
       email,
-      password
-    }
+      password,
+    };
 
-    dispatch(login(userData))
+    dispatch(login(userData));
   };
 
-  if(isLoading) {
-    return <Spinner/>
+  if (isLoading) {
+    return <Spinner />;
   }
 
   return (
     <>
       <section className="heading">
         <h1>
-          <FaSignInAlt />
-          Login
+          <FaSignInAlt /> Login
         </h1>
-        <p>Please login into account</p>
+        <p>Login and start setting goals</p>
       </section>
 
       <section className="form">
@@ -88,6 +86,7 @@ function Login() {
               onChange={onChange}
             />
           </div>
+
           <div className="form-group">
             <button type="submit" className="btn btn-block">
               Submit
